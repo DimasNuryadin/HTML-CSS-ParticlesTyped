@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#particle {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.content .typed {
+  padding: 80px;
+  flex: 50%;
+  min-width: 600px;
+  margin: auto;
+}
+
+.content span {
+  font-size: 30px;
+  color: rgb(60, 60, 60);
+}
+
+.content img {
+  text-align: center;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+}

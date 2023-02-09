@@ -4,9 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <div id="content">
+    <div class="content">
+      <div class="typed">
+        <span class="text"></span>
+      </div>
+      <img src="/vector.gif" alt="">
+    </div>
+  </div>
+
+  <script src="particles.js"></script>
+
+  <script>
+    particlesJS.load('content', 'particlesjs.json', function() {
+    });
+
+    var typed = new Typed('.text', {
+      strings: ['Hello', 'My name is Dimas', 'This is my practice to make particle and typed js', ],
+      typeSpeed: 40,
+      backSpeed: 40,
+      loop: true
+    });
+
+  </script>
+
 </body>
 </html>
